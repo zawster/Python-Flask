@@ -1,0 +1,35 @@
+1 #
+    Install Python 3.3 or higher
+
+2 #
+
+    sudo apt install python3-pip
+
+3 #
+
+    cd /your-project-folder
+
+4 #
+
+    pip install flask
+
+5 #
+
+    sudo apt install mysql-server libmysqlclient-dev
+
+6 # //making virtual environment
+ 
+    python3 -m venv env
+    source ./env/bin/activate
+
+7 #
+    pip install flask-mysqldb
+
+8 # // for WT Form
+
+    pip install Flask-WTF    
+
+9 # // for encrypting the password
+
+    pip install passlib      
+    
