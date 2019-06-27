@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>My Articles</h1>
+    <ul class="list-group">
+        {% for article in articles %}
+            <li class="list-group-item"><a href="article/{{article.id}}">{{ article.title }}</a></li> <!-- in href calling to Single-Article in app.py file -->
+        {% endfor %}
+    </ul>
+
+{% endblock %}

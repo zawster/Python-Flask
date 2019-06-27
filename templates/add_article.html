@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Add Article</h1>
+    {% from "includes/_formhelpers.html" import render_field %}
+    <form action="" method="POST">
+        <div class="form-group">
+            {{ render_field(form.title, class_="form-control") }}
+        </div>
+
+        <div class="form-group">
+                {{ render_field(form.body, class_="form-control") }}
+            </div>
+            <p><input type="submit" value="Submit" class="btn btn-primary" id="editor">  <!-- id=editor is for CK EDITOR -->
+    </form>
+{% endblock %}
